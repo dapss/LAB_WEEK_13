@@ -8,6 +8,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.launch
+import com.example.lab_week_13.repository.MovieRepository
 
 class MovieViewModel(private val movieRepository: MovieRepository) : ViewModel() {
     private val _popularMovies = MutableStateFlow<List<Movie>>(emptyList())
